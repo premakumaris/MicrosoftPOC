@@ -9,6 +9,22 @@
           "manifest": "./src/extensions/botExtension/BotExtensionApplicationCustomizer.manifest.json"
         }
       ]
+    },
+    "sender-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/sender/SenderWebPart.js",
+          "manifest": "./src/webparts/sender/SenderWebPart.manifest.json"
+        }
+      ]
+    },
+    "receiver-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/receiver/ReceiverWebPart.js",
+          "manifest": "./src/webparts/receiver/ReceiverWebPart.manifest.json"
+        }
+      ]
     }
   },
   "externals": {
@@ -18,6 +34,8 @@
     }
   },
   "localizedResources": {
-    "BotExtensionApplicationCustomizerStrings": "lib/extensions/botExtension/loc/{locale}.js"
+    "BotExtensionApplicationCustomizerStrings": "lib/extensions/botExtension/loc/{locale}.js",
+    "SenderWebPartStrings": "lib/webparts/sender/loc/{locale}.js",
+    "ReceiverWebPartStrings": "lib/webparts/receiver/loc/{locale}.js"
   }
 }
