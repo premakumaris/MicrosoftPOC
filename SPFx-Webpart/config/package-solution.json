@@ -1,0 +1,46 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "digital-assist-spfx-client-side-solution",
+    "id": "d2e462a2-866f-4f27-9024-4f279a8549d0",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "webApiPermissionRequests": [{
+      "resource": "Microsoft Graph",
+      "scope": "User.Read.All"
+    },
+    {
+      "resource": "Microsoft Graph",
+      "scope": "User.ReadWrite.All"
+    },
+    {
+      "resource": "Microsoft Graph",
+      "scope": "Group.ReadWrite.All"
+    },
+    {
+      "resource": "Microsoft Graph",
+      "scope": "Group.Read.All"
+    },
+    {
+      "resource": "Microsoft Graph",
+      "scope": "People.Read.All"
+    },
+    {
+      "resource": "AzureADPosh",
+      "scope": "user_impersonation"
+    }
+  ],
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": ""
+    }
+  },
+  "paths": {
+    "zippedPackage": "solution/digital-assist-spfx.sppkg"
+  }
+}

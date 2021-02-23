@@ -1,0 +1,376 @@
+@import "../css/theme.module.scss";
+
+
+
+  // [class*=beak], [class*=bodyContent] {
+ 
+  //   box-shadow:0px 0px 6px 0px #B2B2B2!important;
+  //   border:none;
+     
+  //   }
+
+    :global .ms-Callout{
+      &.ms-TeachingBubble{
+      box-shadow:0px 0px 6px 0px #B2B2B2!important;
+      }
+      }
+
+    .quickItem h4{
+      font-weight: 700;
+    font-size: 14px;
+    color: #004d6f;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    }
+
+    .contactsAllTools h3{
+      margin-top: 0px;
+    }
+
+    .contactsAllTools ul li a{
+      font-size: 14px;
+    }
+
+    .relatedtags ul {
+      padding-inline-start: 0px;
+      margin-top: 20px;
+       
+      }
+      .relatedtags ul li{
+      width: auto;
+      display: inline-block;
+      padding: 6px 14px;
+      background: #eaeaea;
+      border: #d6d6d6 solid 1px;
+      font-size: 12px;
+      margin: 0 8px 5px 0;
+      font-weight: 800;
+      border-radius: 3px;
+      cursor: auto;
+      font-family: "Segoe UI WestEuropean","Segoe UI",-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+      }
+
+
+.card {
+  border-bottom-color: $color-medium-gray;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  display: grid;
+  grid-template-columns: 200px auto auto;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas:
+    "image title link"
+    "image main  ."
+    "image helper  ."
+    ". checkboxes checkboxes";
+  column-gap: 20px;
+  padding: 20px 9px 20px 0px;
+
+  &:focus {
+    //background-color: $theme-color-lighter-alt-primary;
+    outline: none;
+  }
+
+  .imgContainer {
+    background-color: $theme-color-primary;
+    width: 200px;
+    height: 100px;
+    grid-area: image;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+
+
+    .toolImg {
+      height: 100px;
+      width: 100%;
+      
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .iconContainer {
+      width: 21px;
+      height: 24px;
+      position: absolute;
+      top: 4px;
+      right: 4px;
+      background-color: $theme-color-white;
+      padding: 2px;
+
+      span,
+      & > div {
+        height: 100%;
+        width: 100%;
+      }
+
+      .locationIcon {
+        height: 100%;
+        width: 100%;
+
+        img {
+          object-fit: contain;
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .imgText {
+    color: $theme-color-white;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 20px;
+    line-height: 34px;
+  }
+
+  .title {
+    grid-area: title;
+    color: $theme-color-black;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0px;
+  }
+
+  .viewdetails{
+    position: absolute;
+ right: 20px;
+ //width:200px;
+  }
+
+  .viewdetails a{ 
+    outline:none;
+    cursor: pointer;
+  }
+
+  .mainTitle{
+    width:50em;
+  }
+
+  .mainTitle a:link{
+    text-decoration: none;
+     }
+
+     .mainTitle *:focus {
+      border:none;
+      outline: none;
+        }
+      .imgContainer *:focus {
+      border:none;
+      outline: none;
+        }
+
+  .link {
+    grid-area: link;
+    text-align: right;
+    color: $theme-color-primary;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: underline;
+    margin: 0px;
+    cursor: pointer;
+  }
+
+  .helper {
+    grid-area: helper;
+    color: $theme-color-black;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 10px auto;
+    column-gap: 10px;
+    width:50em;
+
+    .helperContent {
+      margin: 0px;
+      display: inline;
+      margin-bottom:10px;
+    }
+
+    .helperIconContainer {
+      height: 18px;
+      width: 16px;
+      //margin: 0px;
+      margin-left: -5px;
+      display: inline-block;
+      //margin-top: 3px;
+
+
+      span,
+      & > div {
+        height: 100%;
+        width: 100%;
+      }
+
+      .helperIcon {
+        height: 100%;
+        width: 100%;
+
+        img {
+          object-fit: contain;
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .content {
+    grid-area: main;
+    color: $theme-color-black;
+    font-size: 14px;
+    line-height: 19px;
+    margin: 0px;
+    margin-top:10px;
+    margin-bottom:10px;
+    width:50em;
+
+  }
+
+  .checkboxes {
+    display: flex;
+    grid-area: checkboxes;
+    width:50em;
+  }
+}
+
+.bubbleVisible {
+  background-color: $theme-color-lighter-alt-primary;
+}
+
+/* Mobile */
+@media all and (max-width: 767px) {
+
+  .quickItem h4{
+    font-weight: 700;
+  font-size: 14px;
+  color: #004d6f;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  }
+
+  .contactsAllTools h3{
+    margin-top: -8px;
+  }
+
+  .contactsAllTools ul li a{
+    font-size: 14px;
+  }
+
+  .card {
+    grid-template-columns: 160px auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas:
+      "image title"
+      "image link"
+      "main main"
+      "helper helper"
+      "checkboxes checkboxes";
+    column-gap: 10px;
+    row-gap: 10px;
+
+    .link {
+      text-align: left;
+      align-self: end;
+    }
+
+    .viewdetails{
+      margin-left: 20px;
+      position: relative;
+  }
+
+    .imgContainer {
+      width: 160px;
+      height: 80px;
+
+      .toolImg {
+        height: 80px;
+        width: 100%;
+      }
+    }
+
+    .checkboxes {
+      flex-direction: column;
+      width: 21em;
+    }
+
+    .helper{
+      width: 24em;
+    }
+
+    .content{
+      width: 24em;
+    }
+
+    .mainTitle{
+      width:9em;
+    }
+  }
+}
+
+/* Tablet */
+@media all and (min-width: 768px) and (max-width: 1280px) {
+
+  .quickItem h4{
+    font-weight: 700;
+  font-size: 14px;
+  color: #004d6f;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  }
+
+  .contactsAllTools h3{
+    margin-top: -8px;
+  }
+
+  .contactsAllTools ul li a{
+    font-size: 14px;
+  }
+
+  .card {
+    grid-template-rows: 30px auto auto auto 34px;
+    grid-template-areas:
+      "image title link"
+      "image main  ."
+      "image main ."
+      ". helper  ."
+      ". checkboxes checkboxes";
+
+    .title {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1;
+      overflow: hidden;
+      margin-bottom: 5px;
+      text-overflow: ellipsis;
+    }
+
+    .helper {
+      margin-bottom: 10px;
+      width: 28em;
+    }
+
+    .mainTitle{
+      width:28em;
+    }
+
+    .content{
+      width:28em;
+    }
+    
+    .checkboxes{
+      width:32em;
+    }
+
+    padding-bottom: 30px;
+  }
+}
