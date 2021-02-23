@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <ClientSideComponentInstance
+        Title="BotExtension"
+        Location="ClientSideExtension.ApplicationCustomizer"
+        ComponentId="3b23b4ae-ae1d-452d-bb4d-557c69e29708"
+        Properties="{&quot;testMessage&quot;:&quot;Test message&quot;}">
+    </ClientSideComponentInstance>
+</Elements>

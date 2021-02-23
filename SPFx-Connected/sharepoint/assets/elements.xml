@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <CustomAction
+        Title="BotExtension"
+        Location="ClientSideExtension.ApplicationCustomizer"
+        ClientSideComponentId="3b23b4ae-ae1d-452d-bb4d-557c69e29708"
+        ClientSideComponentProperties="{&quot;BotName&quot;:&quot;Ask - Contoso&quot;, &quot;DirectLineSecret&quot;:&quot;A82T5xvi2JY.4oc4hBdAHcR2aBVZ3ydssc3JzVeurJngZFGU67orN0o&quot;}">
+    </CustomAction>
+</Elements>
