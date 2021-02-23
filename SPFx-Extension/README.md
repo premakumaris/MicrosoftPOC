@@ -25,7 +25,7 @@ gulp serve --nobrowser
 ### Paste the following at the end of any SharePoint modern page in your tenant to test/debug
 > Be sure to update the properties noted in the JSON (DirectLineSecret, BotName)
 
-?loadSPFX=true&debugManifestsFile=https://localhost:4321/temp/manifests.js&customActions={"15be81a7-b6b8-4a75-8de3-0da288492e77":{"location":"ClientSideExtension.ApplicationCustomizer","properties":{"DirectLineSecret":"b8SE7pQLcjM.q4HbLlxpaGgt8QvAuBVtqgjbbI2CurwxnxhtP52hcrs", "BotName": "Withum IT Bot"}}}
+?loadSPFX=true&debugManifestsFile=https://localhost:4321/temp/manifests.js&customActions={"15be81a7-b6b8-4a75-8de3-0da288492e77":{"location":"ClientSideExtension.ApplicationCustomizer","properties":{"DirectLineSecret":"b8SE7pQLcjM.q4HbLlxpaGgt8QvAuBVtqgjbbI2CurwxnxhtP52hcrs", "BotName": "Ask - Contoso"}}}
 
 ### Deployment
 gulp bundle --ship
